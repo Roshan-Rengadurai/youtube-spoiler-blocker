@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoiler Guard</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Spoiler Guard</h1>
+    <section>
+      <h2>Channels</h2>
+      <label for="channels">One per line</label>
+      <textarea id="channels" rows="5" placeholder="Example:\nredlettermedia\n@marvel"></textarea>
+    </section>
+    <section>
+      <h2>Topics</h2>
+      <label for="topics">Keywords matched against video titles</label>
+      <textarea id="topics" rows="5" placeholder="Example:\nstar wars\neldorado finale"></textarea>
+    </section>
+    <button id="save">Save</button>
+    <p id="status" role="status" aria-live="polite"></p>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
